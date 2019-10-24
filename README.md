@@ -25,7 +25,7 @@ The solution? Miso_list! A smart, auto-categorizing todo list app. The user simp
   - Check the db folder to see what gets created and seeded in the SDB
 7. Run the server: `npm run local`
   - Note: nodemon is used, so you should not have to restart your server after any changes
-8. Visit `http://localhost:8080/`
+8. Visit [localhost:8080](http://localhost:8080/)
 
 ## Dependencies
 
