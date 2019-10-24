@@ -217,7 +217,7 @@ app.get("/:table/:id", (req, res) => {
 //EDITING THE NAME
 app.post("/:table/:id", (req, res) => {
   let listItem = req.headers.referer;
-  listItem = listItem.replace('http://localhost:8080/', '');
+  listItem = listItem.replace(`http://localhost:${PORT}/`, '');
   listItem = listItem.replace('books/', '');
   listItem = listItem.replace('movies/', '');
   listItem = listItem.replace('products/', '');
@@ -248,7 +248,7 @@ app.post("/:table/:id", (req, res) => {
 //DELETING THE URL
 app.post("/:table/:id/delete", (req, res) => {
   let listItem = req.headers.referer;
-  listItem = listItem.replace('http://localhost:8080/', '');
+  listItem = listItem.replace(`http://localhost:${PORT}/`, '');
   listItem = listItem.replace('/delete', '');
   listItem = listItem.replace('books/', '');
   listItem = listItem.replace('movies/', '');
@@ -280,7 +280,7 @@ app.post("/:table/:id/delete", (req, res) => {
 app.post("/:table/:id/:name/update", (req, res) => {
   //extracts name from the url
   let name = req.url;
-  name = name.replace('http://localhost:8080/', '');
+  name = name.replace(`http://localhost:${PORT}/`, '');
   name = name.replace('/update', '');
   name = name.replace(':table/', '');
   name = name.split('/');
@@ -289,7 +289,7 @@ app.post("/:table/:id/:name/update", (req, res) => {
   //extracts item id from the url
 
   let listItem = req.headers.referer;
-  listItem = listItem.replace('http://localhost:8080/', '');
+  listItem = listItem.replace(`http://localhost:${PORT}/`, '');
   listItem = listItem.replace('/update', '');
   listItem = listItem.replace('books/', '');
   listItem = listItem.replace('movies/', '');
