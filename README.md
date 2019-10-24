@@ -10,14 +10,18 @@ The solution? Miso_list! A smart, auto-categorizing todo list app. The user simp
 
 ## Getting Started
 
-1. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
-2. Update the .env file with your correct local information 
+1. Creating the Database
+  - Enter Postgres with `psql` and type in the following commands
+  - `CREATE ROLE labber WITH LOGIN password 'labber';`
+  - `CREATE DATABASE midterm OWNER labber;`
+2. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
+3. Update the .env file with your correct local information 
   - username: `labber` 
   - password: `labber` 
   - database: `midterm`
-3. Install dependencies: `npm i`
-4. Fix to binaries for sass: `npm rebuild node-sass`
-5. Reset database: `npm run db:reset`
+4. Install dependencies: `npm i`
+5. Fix to binaries for sass: `npm rebuild node-sass`
+6. Reset database: `npm run db:reset`
   - Check the db folder to see what gets created and seeded in the SDB
 7. Run the server: `npm run local`
   - Note: nodemon is used, so you should not have to restart your server after any changes
