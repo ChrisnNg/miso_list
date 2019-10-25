@@ -318,6 +318,7 @@ const recatergorizeIntoMisc = (name, context, id) => {
 
 //User queries
 const newUserDB = (username, email, password) => {
+  email = email.trim()
   return pool.query(`
   INSERT INTO users (name, email, password)
   VALUES ($1, $2, $3)
