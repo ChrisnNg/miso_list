@@ -7,8 +7,7 @@ const chalk = require('chalk');
 const Client = require('pg-native');
 
 // PG connection setup
-const connectionString = process.env.DATABASE_URL ||
-  `postgresql://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+const connectionString = 'postgres://doydrcacqiihwp:31234f1b38929cf39fa706cd3e3f84407aa714893be307ef3701a2eeac5cf975@ec2-54-204-39-43.compute-1.amazonaws.com:5432/d1schf4qtqc0ti'
 const client = new Client();
 
 // Loads the schema files from db/schema
