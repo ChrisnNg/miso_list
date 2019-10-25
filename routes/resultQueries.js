@@ -1,8 +1,12 @@
 const { searchEngine } = require('../lib/searchEngine');
 
 const { Pool } = require('pg');
-const connectionString = 'postgres://doydrcacqiihwp:31234f1b38929cf39fa706cd3e3f84407aa714893be307ef3701a2eeac5cf975@ec2-54-204-39-43.compute-1.amazonaws.com:5432/d1schf4qtqc0ti';
-const pool = new Pool({connectionString});
+const pool = new Pool({
+  user: process.env.DB_USER,	
+  password: process.env.DB_PASS,	
+  host: process.env.DB_HOST,	
+  database: process.env.DB_NAME	
+});
 
 // look at how to chain promises!
 const getAllThings = (id) => {
