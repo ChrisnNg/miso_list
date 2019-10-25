@@ -109,7 +109,7 @@ app.get("/register", (req, res) => {
 //POSTING INFORMATION FROM REGISTRATION PAGE // REGISTERING NEW USER
 app.post("/register", (req, res) => {
   let newUsername = req.body.username;
-  let newEmail = req.body.email.strip();
+  let newEmail = req.body.email.trim();
   let newPassword = req.body.password;
   resultQueries.newUserDB(newUsername, newEmail, newPassword)
     .then((user) => {
@@ -125,7 +125,7 @@ app.get("/login", (req, res) => {
 
 //LOGGING INTO THE USER ACCOUNT
 app.post("/login", (req, res) => {
-  const email = req.body.email.strip();
+  const email = req.body.email.trim();
   if (email) {
     resultQueries.checkEmail(email)
       .then((result) => {
