@@ -134,6 +134,9 @@ app.post("/login", (req, res) => {
     resultQueries
       .checkEmail(email)
       .then(result => {
+        if (!result) {
+          res.send("email does not exist");
+        }
         if (email === result.email) {
           console.log(result);
           res.cookie("user_id", result.id);
@@ -147,7 +150,7 @@ app.post("/login", (req, res) => {
         console.log(err);
       });
   } else {
-    res.render("login");
+    res.redirect("login");
   }
 });
 
