@@ -147,7 +147,7 @@ app.post("/login", (req, res) => {
         console.log(err);
       });
   } else {
-    res.status(404);
+    res.render("login");
   }
 });
 
