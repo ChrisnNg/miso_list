@@ -2,7 +2,10 @@
 
 When you are recommended something it's not always easy to jot it down for later in an organized fashion. Adding the item to your phone or computer ends up taking time and opening up the right app is only part of the problem. You then have to locate the right list ("Movies to watch", "Books to read", etc.) to add to. And if you do get it in to the right list, you don't have much more context about it. This delay and lack of additional information acts as a huge deterrent.
 
-The solution? Miso_list! A smart, auto-categorizing todo list app. The user simply has to add the name of the thing, and it gets put into the correct list.
+The solution? Miso_list- A smart todo list app that persists user data using Express/Postgres.
+          It will automatically categorize each todo list item into a category
+          (movies, books, products, restaurants) by using our categorization
+          logic built with Google's relevancy algorithm.
 
 ## Final Product
 
