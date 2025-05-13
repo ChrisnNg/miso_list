@@ -12,7 +12,7 @@ Key Features:
 
     ✨ Predictive UI: Suggests task categories as users type
 
-Tech Stack: JavaScript, Jquery, PostgreSQL, Node.js, Express, and Google Relevancy API
+Tech Stack: `JavaScript` | `Jquery` | `PostgreSQL` | `Node.js` | `Express` | `Google Relevancy API`
 
 ## Final Product
 
