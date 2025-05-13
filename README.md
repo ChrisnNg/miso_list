@@ -2,11 +2,11 @@
 
 An intelligent to-do list that auto-organizes tasks using machine learning
 
-**Key Features:**
-    - 🧠 AI Categorization: Leverages Google's relevancy algorithm to automatically classify entries
-    - 🔗 Smart Recommendations: Generates context-aware quick links for each task
-    - 📁 Persistent Storage: PostgreSQL backend maintains categorized tasks across sessions
-    - ✨ Predictive UI: Suggests task categories as users type
+**Key Features:**  
+- 🧠 AI Categorization: Leverages Google's relevancy algorithm to automatically classify entries 
+- 🔗 Smart Recommendations: Generates context-aware quick links for each task 
+- 📁 Persistent Storage: PostgreSQL backend maintains categorized tasks across sessions
+- ✨ Predictive UI: Suggests task categories as users type 
 
 Tech Stack: `JavaScript` | `Jquery` | `PostgreSQL` | `Node.js` | `Express` | `Google Relevancy API`
 
