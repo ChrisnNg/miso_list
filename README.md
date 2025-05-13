@@ -1,4 +1,4 @@
-### Miso List - AI-Powered Task Manager
+### Miso List | AI-Powered Task Manager
 
 An intelligent to-do list that auto-organizes tasks using machine learning
 
